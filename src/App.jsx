@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Items from "./pages/sidebar/Items";
 import Groups from "./pages/sidebar/Groups";
+import GroupDetail from "./pages/sidebar/GroupDetail";
 import Variants from "./pages/sidebar/Variants";
 import TransferOrder from "./pages/sidebar/TransferOrder";
 import Adjustment from "./pages/sidebar/Adjustment";
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/inventory/items" element={<Items />} />
           <Route path="/inventory/groups" element={<Groups />} />
+          <Route path="/inventory/groups/:id" element={<GroupDetail />} />
           <Route path="/inventory/variants" element={<Variants />} />
           <Route path="/inventory/transfer-order" element={<TransferOrder />} />
           <Route path="/inventory/adjustment" element={<Adjustment />} />
