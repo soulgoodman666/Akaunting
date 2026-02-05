@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-02-03T09:25:02.090Z",
+  "steps": [
+    "1. Backup all current data from database",
+    "2. Backup current source code files",
+    "3. Make code changes safely",
+    "4. Test with backup data",
+    "5. Restore if needed",
+    "6. Keep backup for future reference"
+  ],
+  "backupCommands": [
+    "node backup-data-node.cjs backup",
+    "node safe-code-updates.js backup-files",
+    "node safe-code-updates.js restore-files <backup-dir>"
+  ],
+  "dataLocations": [
+    "Database: MySQL akaunting",
+    "Backup Files: ./backup-*.json",
+    "Code Backups: ./backup-files-*/"
+  ]
+}
